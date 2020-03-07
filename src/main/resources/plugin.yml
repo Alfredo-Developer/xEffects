@@ -1,0 +1,15 @@
+name: xEffects
+version: 1.0
+main: rip.oxen.xeffects.xEffects
+authors: [Oxen Development]
+commnads:
+  effects:
+    description: Open xEffects GUI
+  sp:
+    description: Toggle on/off speed
+  fr:
+    aliases: [fireres, res]
+    description: Toggle on/off fire res
+  inv:
+    aliases: [invisibility]
+    description: Toggle on/off invisibility

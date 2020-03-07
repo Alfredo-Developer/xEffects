@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xEffects:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/xEffects_jar</output-path>
+    <root id="archive" name="xEffects.jar">
+      <element id="module-output" name="xEffects" />
+    </root>
+  </artifact>
+</component>

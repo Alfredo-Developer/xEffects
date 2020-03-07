@@ -1,0 +1,45 @@
+license_key: ''
+
+###################################
+#        Permission nodes:        #
+#     GUI: xeffects.gui           #
+#     Speed: xeffects.speed       #
+#     Fire Res: xeffects.fireres  #
+#     Invis: xeffects.invis       #
+###################################
+
+Inventory:
+  title: '&cxEffects GUI'
+  size: 9
+
+Effects:
+  SPEED:
+    enabled: true
+    slot: 0
+    item:
+      material: 'WATER_BOTTLE'
+      name: '&bSpeed'
+      lore:
+        - '1'
+        - '2'
+        - '3'
+  FIRE:
+    enabled: true
+    slot: 1
+    item:
+      material: 'WATER_BOTTLE'
+      name: '&cFire Resistance'
+      lore:
+        - '1'
+        - '2'
+        - '3'
+  INVIS:
+    enabled: true
+    slot: 2
+    item:
+      material: 'WATER_BOTTLE'
+      name: '&7Invisibility'
+      lore:
+        - '1'
+        - '2'
+        - '3'
