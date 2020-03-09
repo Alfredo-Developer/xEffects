@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="xEffects:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="46201b16-4467-4bd5-965b-043eb7ad8ae3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/FireResEffectCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/InvEffectCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/SpeedEffectCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/xEffectsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/xEffects_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/xEffects_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/FireResEffectCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/FireResEffectCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/InvEffectCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/InvEffectCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/SpeedEffectCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/commnads/SpeedEffectCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/inventory/EffectsInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/inventory/EffectsInventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/listener/EffectGUIListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/listener/EffectGUIListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/xEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rip/oxen/xeffects/xEffects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +49,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="xeffects" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Oxen Plugins" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -74,13 +90,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="92" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1583597332619" />
-    <state x="277" y="16" key="SettingsEditor" timestamp="1583599490129">
+    <state x="577" y="183" key="FileChooserDialogImpl" timestamp="1583721544975">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="16" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583599490129" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1583598418397">
+    <state x="577" y="183" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583721544975" />
+    <state x="277" y="16" key="SettingsEditor" timestamp="1583721601411">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1583598418397" />
+    <state x="277" y="16" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583721601411" />
+    <state x="462" y="164" width="611" height="536" key="find.popup" timestamp="1583725315332">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="462" y="164" width="611" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1583725315332" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1583726416167">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1583726416167" />
   </component>
 </project>

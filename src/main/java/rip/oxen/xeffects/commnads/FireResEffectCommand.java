@@ -23,12 +23,12 @@ public class FireResEffectCommand implements CommandExecutor {
             return true;
         }
 
-        if(player.hasPotionEffect(PotionEffectType.SPEED)){
-            player.removePotionEffect(PotionEffectType.SPEED);
-            Utils.sendMessage(player, "&cDisabled Speed");
+        if(player.hasPotionEffect(PotionEffectType.FIRE_RESISTANCE)){
+            player.removePotionEffect(PotionEffectType.FIRE_RESISTANCE);
+            Utils.sendMessage(player, "&cDisabled Fire Resistance");
         }else{
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 2));
-            Utils.sendMessage(player, "&aEnabled Speed");
+            player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, Integer.MAX_VALUE, 1));
+            Utils.sendMessage(player, "&aEnabled Fire Resistance");
         }
         return false;
     }

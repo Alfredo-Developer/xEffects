@@ -39,11 +39,11 @@ public class EffectsInventory {
 
         List<String> fireresLore = new ArrayList<>();
         for(String lores : plugin.getConfig().getStringList("Effects.FIRE.item.lore")){
-            speedLore.add(Utils.translate(lores));
+            fireresLore.add(Utils.translate(lores));
         }
         if(!(player.hasPermission("xeffects.fireres"))){
-            speedLore.add(" ");
-            speedLore.add("&cYou do not have permission to use this effect.");
+            fireresLore.add(" ");
+            fireresLore.add("&cYou do not have permission to use this effect.");
         }
         ItemStack fireresItem = new ItemBuilder(Material.matchMaterial(plugin.getConfig().getString("Effects.FIRE.item.material"))).setName(Utils.translate(plugin.getConfig().getString("Effects.FIRE.item.name"))).setLore(fireresLore).toItemStack();
 
@@ -51,11 +51,11 @@ public class EffectsInventory {
 
         List<String> invisLore = new ArrayList<>();
         for(String lores : plugin.getConfig().getStringList("Effects.INVIS.item.lore")){
-            speedLore.add(Utils.translate(lores));
+            invisLore.add(Utils.translate(lores));
         }
         if(!(player.hasPermission("xeffects.invis"))){
-            speedLore.add(" ");
-            speedLore.add("&cYou do not have permission to use this effect.");
+            invisLore.add(" ");
+            invisLore.add("&cYou do not have permission to use this effect.");
         }
         ItemStack invisItem = new ItemBuilder(Material.matchMaterial(plugin.getConfig().getString("Effects.INVIS.item.material"))).setName(Utils.translate(plugin.getConfig().getString("Effects.INVIS.item.name"))).setLore(invisLore).toItemStack();
 

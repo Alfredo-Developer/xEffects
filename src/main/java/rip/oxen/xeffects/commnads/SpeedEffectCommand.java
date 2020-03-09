@@ -27,7 +27,7 @@ public class SpeedEffectCommand implements CommandExecutor {
             player.removePotionEffect(PotionEffectType.SPEED);
             Utils.sendMessage(player, "&cDisabled Speed");
         }else{
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 2));
+            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1));
             Utils.sendMessage(player, "&aEnabled Speed");
         }
         return false;

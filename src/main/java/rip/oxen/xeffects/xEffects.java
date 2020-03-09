@@ -4,11 +4,9 @@ import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import rip.oxen.xeffects.commnads.EffectsCommand;
-import rip.oxen.xeffects.commnads.FireResEffectCommand;
-import rip.oxen.xeffects.commnads.InvEffectCommand;
-import rip.oxen.xeffects.commnads.SpeedEffectCommand;
+import rip.oxen.xeffects.commnads.*;
 import rip.oxen.xeffects.license.AdvancedLicense;
+import rip.oxen.xeffects.listener.EffectGUIListener;
 
 public class xEffects extends JavaPlugin {
 
@@ -27,6 +25,10 @@ public class xEffects extends JavaPlugin {
         System.out.println("Checking License...");
         checkLicense();
         System.out.println("Completed");
+        System.out.println("-----------------------");
+        System.out.println("Reloading Config...");
+        reloadConfig();
+        System.out.println("Config Reloaded");
         System.out.println("-----------------------");
         System.out.println("Registering Commands...");
         registerCommands();
@@ -50,17 +52,19 @@ public class xEffects extends JavaPlugin {
     }
 
     private void registerCommands(){
-        getCommand("effects").setExecutor(new EffectsCommand());
         getCommand("sp").setExecutor(new SpeedEffectCommand());
         getCommand("fr").setExecutor(new FireResEffectCommand());
         getCommand("inv").setExecutor(new InvEffectCommand());
+        getCommand("effects").setExecutor(new EffectsCommand());
+        getCommand("xeffects").setExecutor(new xEffectsCommand());
     }
 
     private void registerListeners(){
         PluginManager pm = Bukkit.getPluginManager();
+        pm.registerEvents(new EffectGUIListener(), this);
     }
 
     private void checkLicense(){
-        if(!new AdvancedLicense(this.getConfig().getString("license_key"), "http://oxendevelopment.000webhost.com/verify.php", this).register()) return;
+        if(!new AdvancedLicense(this.getConfig().getString("license_key"), "https://oxendevelopment.000webhostapp.com/verify.php", this).setSecurityKey("YecoF0I6M05thxLeokoHuW8iUhTdIUInjkfF").register()) return;
     }
 }

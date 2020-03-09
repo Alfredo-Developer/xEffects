@@ -23,12 +23,12 @@ public class InvEffectCommand implements CommandExecutor {
             return true;
         }
 
-        if(player.hasPotionEffect(PotionEffectType.SPEED)){
-            player.removePotionEffect(PotionEffectType.SPEED);
-            Utils.sendMessage(player, "&cDisabled Speed");
+        if(player.hasPotionEffect(PotionEffectType.INVISIBILITY)){
+            player.removePotionEffect(PotionEffectType.INVISIBILITY);
+            Utils.sendMessage(player, "&cDisabled Invisibility");
         }else{
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 2));
-            Utils.sendMessage(player, "&aEnabled Speed");
+            player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, Integer.MAX_VALUE, 1));
+            Utils.sendMessage(player, "&aEnabled Invisibility");
         }
         return false;
     }
