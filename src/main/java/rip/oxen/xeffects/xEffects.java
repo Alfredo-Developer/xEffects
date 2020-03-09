@@ -5,6 +5,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import rip.oxen.xeffects.commnads.EffectsCommand;
+import rip.oxen.xeffects.commnads.FireResEffectCommand;
+import rip.oxen.xeffects.commnads.InvEffectCommand;
+import rip.oxen.xeffects.commnads.SpeedEffectCommand;
 import rip.oxen.xeffects.license.AdvancedLicense;
 
 public class xEffects extends JavaPlugin {
@@ -48,6 +51,9 @@ public class xEffects extends JavaPlugin {
 
     private void registerCommands(){
         getCommand("effects").setExecutor(new EffectsCommand());
+        getCommand("sp").setExecutor(new SpeedEffectCommand());
+        getCommand("fr").setExecutor(new FireResEffectCommand());
+        getCommand("inv").setExecutor(new InvEffectCommand());
     }
 
     private void registerListeners(){

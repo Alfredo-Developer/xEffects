@@ -21,7 +21,7 @@ public class EffectGUIListener implements Listener {
         int slot = event.getSlot();
 
         if(!inv.getTitle().equals(ChatColor.stripColor(xEffects.getInstance().getConfig().getString("Inventory.title")))) return;
-
+        event.setCancelled(true);
         if(slot == xEffects.getInstance().getConfig().getInt("Effects.SPEED.slot") && xEffects.getInstance().getConfig().getBoolean("Effects.SPEED.enabled")){
             if(player.hasPotionEffect(PotionEffectType.SPEED)){
                 player.removePotionEffect(PotionEffectType.SPEED);
